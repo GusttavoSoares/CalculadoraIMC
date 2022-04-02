@@ -12,7 +12,7 @@ namespace CalculadoraIMC
             Console.WriteLine("Qual a sua altura em metros ? Ex. 1,65");
             float altura = Convert.ToSingle(Console.ReadLine());
 
-            Console.WriteLine ("Qual o seu peso em Kg ? Ex: 70,3");
+            Console.WriteLine ("Qual o seu peso em kg ? Ex: 70,3");
             float peso = Convert.ToSingle(Console.ReadLine());
 
             double imc = Math.Round(peso / (altura*altura), 2);
@@ -41,7 +41,15 @@ namespace CalculadoraIMC
                 else if (imc >= 40){
                     Console.WriteLine ("Obesidade II (mórbida)");
                 }
-            
+
+                double  pesoideal  = Math.Round ( 21.7 * (altura*altura)) ;
+                if (imc >= 25 ){
+                  Console.WriteLine ("Você precisa perder {0} kg.", peso - pesoideal);
+                }else if ( imc < 18.5) {
+                    Console.WriteLine ("Você precisa ganhar {0} kg.",  pesoideal - peso);
+                }else {
+                Console.WriteLine ("Você está no peso ideal!");
+                }
         }
     }
 }
