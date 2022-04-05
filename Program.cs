@@ -42,7 +42,7 @@ namespace CalculadoraIMC
                     Console.WriteLine ("Obesidade II (mórbida)");
                 }
 
-                double  pesoideal  = Math.Round ( 21.7 * (altura*altura)) ;
+                double  pesoideal  = Math.Round ( 21.7 * (altura*altura ) , 2) ;
                 if (imc >= 25 ){
                   Console.WriteLine ("Você precisa perder {0} kg.", peso - pesoideal);
                 }else if ( imc < 18.5) {

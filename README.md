@@ -4,7 +4,7 @@ Aplicação console para cálculo do IMC.
 ## Funcionalidades
 - Calcula e apresenta o IMC
 - Apresenta a situação do usuário
-- Mostra quantos quilograma deve ganhar/perder para chegar na massa ideal
+- Mostra quantos quilogramas deve ganhar/perder para chegar no peso ideal
 
 ## Tecnologias utilizadas
 
