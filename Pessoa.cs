@@ -6,7 +6,7 @@ public class Pessoa
     public double CalcularIMC { get => Math.Round(Peso / (Altura*Altura), 2); }
     public double CalcularPesoIdeal { get => Math.Round ( 21.7 * (Altura*Altura ) , 2) ; }
 
-    public string Faixa()
+    public string DescobrirFaixa()
     {
         double IMC = CalcularIMC;
 
@@ -29,12 +29,11 @@ public class Pessoa
             else if (IMC <= 39.99){
                 return "Obesidade II (severa)";
             }
-            else if (IMC >= 40){
+            else  
                 return "Obesidade II (mórbida)";
-            }
      }
 
-     public double DevePerder() 
+     public double DevePerderOuGanhar() 
     { 
         double IMC = CalcularIMC;
 
@@ -52,6 +51,14 @@ public class Pessoa
     {
         Nome = nome;
         Peso = peso;
-        Altura = altura; 
+       Altura = altura; 
+    }
+
+    public Pessoa()
+    {
+        Nome = "";
+        Peso = 0;
+        Altura = 0;
     }
 }
+
