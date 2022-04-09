@@ -8,7 +8,7 @@ Aplicação console para cálculo do IMC.
 
 ## Tecnologias utilizadas
 
-- dotnet core 2.1
+- dotnet core 6.0
 
 ## Como executar
 Faça o clone do repositório e execute o comando:
