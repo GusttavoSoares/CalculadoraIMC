@@ -33,17 +33,17 @@ public class Pessoa
                 return "Obesidade II (mórbida)";
      }
 
-     public double DevePerderOuGanhar() 
+     public string DevePerderOuGanhar() 
     { 
         double IMC = CalcularIMC;
 
         double PesoIdeal = CalcularPesoIdeal;
-        if (IMC >= 25 ){
-                  return  Peso - PesoIdeal;
-                }else if ( IMC < 18.5) {
-                    return  PesoIdeal - Peso;
+        if (IMC <18.5 ){
+                  return String.Format("Você deve ganhar: {0} kg", Math.Round( PesoIdeal -  Peso),2);
+                }else if ( IMC > 24.9){
+                     return String.Format("Você deve perder: {0} kg", Math.Round(Peso - PesoIdeal ),2);
                 }else {
-                return 0;
+                    return "Você está no peso ideal";
                 }
     }
 

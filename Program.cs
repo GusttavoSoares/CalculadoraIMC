@@ -11,9 +11,10 @@ p1.Peso = Convert.ToSingle(Console.ReadLine());
 
 Console.WriteLine ("Seu IMC é: {0} ", p1.CalcularIMC);
 Console.WriteLine("Você atualmente está: {0}",  p1.DescobrirFaixa());
-Console.WriteLine("O seu peso ideal é: {0}, para isso você precisa de  {1} kg ", p1.CalcularPesoIdeal, Math.Round(p1.DevePerderOuGanhar()));
+Console.WriteLine("O seu peso ideal é: {0}" , p1.CalcularPesoIdeal);
+Console.WriteLine(p1.DevePerderOuGanhar());
 
-Console.WriteLine("{0} sua altura é {1} e seu peso {2}", p1.Nome, Math.Round(p1.Altura, 3), p1.Peso);
+Console.WriteLine("{0} sua altura é {1} e seu peso {2}", p1.Nome, Math.Round(p1.Altura, 2 ), p1.Peso);
 
         
 
